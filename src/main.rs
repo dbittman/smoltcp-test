@@ -12,7 +12,7 @@ use smoltcp::{
 };
 use tracing::Level;
 
-// Adapted loopback example with a separate networking stack management type, that does polling internally.
+// Adapted loopback example with a separate networking stack management type, that does polling internally. In particular, do not expect this to be fast or efficient. We're going for ... fairly simple, for testing.
 
 fn main() {
     tracing::subscriber::set_global_default(
